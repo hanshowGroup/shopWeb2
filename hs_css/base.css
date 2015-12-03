@@ -1,0 +1,7 @@
+.statbox .number,.statbox .title{
+    left:10px;   
+}
+footer .break {
+    border-left: 1px solid #FFF;
+    margin: -12px 10px -10px 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src= "hs_js/angular.min.js"></script>
+    <script src="hs_js/mock.js"></script>
+    <script src="hs_js/myMock.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('http://www.runoob.com/try/angularjs/data/Customers_JSON.php', function($scope, $http) {
+    $http.get("getTest")
+    .success(function (response) {$scope.names = response.records;});
+});
+</script>
+
+</body>
+</html>
+			
