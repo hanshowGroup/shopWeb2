@@ -1,0 +1,40 @@
+{"goods":[{
+    "id"	   : "11",
+    "shop": "No.001",
+    "name": "11",
+    "category"	   : "11",
+    "price":100 ,
+    "originPrice":100 ,
+    "origin":"@city" ,
+    "stock":1000 ,
+    "binding":10 ,
+    "temp": "temp_normal",
+    "status": 0,
+    "updateTime":"2015/11/1 08:00:00" 
+    },{
+    "id"	   : "11",
+    "shop": "No.001",
+    "name": "11",
+    "category"	   : "11",
+    "price":100 ,
+    "originPrice":100 ,
+    "origin":"@city" ,
+    "stock":1000 ,
+    "binding":10 ,
+    "temp": "temp_normal",
+    "status": 0,
+    "updateTime":"2015/11/1 08:00:00" 
+    },{
+    "id"	   : "11",
+    "shop": "No.001",
+    "name": "11",
+    "category"	   : "11",
+    "price":100 ,
+    "originPrice":100 ,
+    "origin":"@city" ,
+    "stock":1000 ,
+    "binding":10 ,
+    "temp": "temp_normal",
+    "status": 0,
+    "updateTime":"2015/11/1 08:00:00" 
+    }]}
