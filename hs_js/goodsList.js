@@ -7,7 +7,6 @@
 //        $scope.goods = response.records;});
 //});
 //});
-
 $(document).ready(function() {
 //    $('#apTable').dataTable ({
 //        
