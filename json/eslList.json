@@ -1,0 +1,11 @@
+{
+  "id"	   : "01",
+  "shop": "No.001",
+  "type": "11",
+  "size"	   : "11",
+  "electricity":100 ,
+  "bind":100 ,
+  "heartbeat":"123" ,
+  "updemode":"已经更新",
+  "updateTime":"2015/11/1 08:00:00"
+}

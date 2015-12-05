@@ -1,7 +1,9 @@
+
 $(document).ready(function() {
 //    $('#apTable').dataTable ({
 //        
 //    });
+
     $('.btn-add').click(function(e){
 		e.preventDefault();
 		$('#addGoods').modal('show');
