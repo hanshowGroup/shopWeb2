@@ -341,8 +341,26 @@
 <!--                                  <th>操作</th>-->
 							  </tr>
 						  </thead>   
-						 <!-- <tbody>
-							<tr>
+						 <<tbody>
+						<tr ng-repeat="esllist in esllists">
+							<td>{{$index+1}}}</td>
+							<td>{{esllist.shop}}</td>
+							<td>{{esllist.id}}}</td>
+							<td class="center">{{esllist.type}}}</td></td>
+							<td class="center">{{esllist.size}}}</td>
+							<td class="center">
+								<span class="label label-success">{{esllist.electricity}}</span>
+							</td>
+							<td class="center">
+								<a href="#" data-toggle="tooltip" data-placement="right" title="商品名称：红富士苹">{{esllist.bind}}</a>
+							</td>
+							<td class="center">{{esllist.heartbeat}}</td>
+							<td class="center">
+								<span class="label label-success">{{esllist.updemode}}</span>
+							</td>
+							<td class="center">{{esllist.updatetime}}</td>
+							</tr>
+							<!--<tr>
                                 <td>1</td>
                                 <td>No.001</td>
 								<td>534567</td>
@@ -408,7 +426,7 @@
 	</footer>
 	
 	<!-- start: JavaScript-->
-
+       <script src="js/"></script>
 		<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery-migrate-1.0.0.min.js"></script>
 	
