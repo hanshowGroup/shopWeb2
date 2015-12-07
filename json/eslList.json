@@ -1,8 +1,32 @@
-{esllists:[{
-
-  }
-
-  ]
-
-
+{
+  "esllists":[{
+    "shop": "No.001",
+    "id": "01",
+    "type": "11",
+    "size": "11",
+    "electricity": 100,
+    "bind": 100,
+    "goodname":"红富士苹果",
+    "goodId":1,
+    "heartbeat": "123",
+    "updemode": "已经更新",
+    "updatetime": "2015/11/1 08:00:00",
+    "basestation":111
+  },
+{
+"shop": "No.001",
+"id": "01",
+"type": "11",
+"size": "11",
+"electricity": 100,
+"bind": 100,
+  "goodname":"红富士苹果",
+  "goodId":2,
+"heartbeat": "123",
+"updemode":"已经更新",
+"updatetime": "2015/11/1 08:00:00",
+  "basestation":112
+}]
 }
+
+
