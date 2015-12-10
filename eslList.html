@@ -21,7 +21,7 @@
 	<link id="base-style-responsive" href="css/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
-	
+	<script src="js/jquery-1.9.1.min.js"></script>
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -50,7 +50,7 @@
 		
 </head>
 
-<body>
+<body >
 		<!-- start: Header -->
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -264,8 +264,6 @@
 			
 			<!-- start: Content -->
 			<div id="content" class="span10">
-			
-			
 			<ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
@@ -351,11 +349,21 @@
 									<input type="text" class="form-control"  ng-model="eslId">
 									</div>
 								</div>
-									<div class="form-group"  style="margin-bottom: 20px" >
+									<!--<div class="form-group"  style="margin-bottom: 20px" >
 										<label for="basestation" class=" col-sm-2 control-label">基站标示：</label>
 										<div class="col-sm-10">
 											<input type="text" class="form-control" id="basestation" ng-model="basestation">
 										</div>
+									</div>-->
+									<div class="form-group">
+                                         <label class=" col-sm-2  control-label" for="selectError3">基站标示：</label>
+										   <div class=" col-sm-10">
+											<select id="selectError3" ng-model="basestation">
+													<option>111</option>
+													<option>112</option>
+													<option>113</option>
+											</select>
+											   </div>
 									</div>
                              </form>
 							</div>
@@ -370,11 +378,14 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal -->
 				</div>
-					<div class="box-content"  ng-app="esllistApp" ng-controller="esllistCtrl" >
-						<table class="table table-striped table-bordered bootstrap-datatable datatable">
+					<div class="box-content">
+						<table class="table table-striped table-bordered bootstrap-datatable datatable"  ng-app="esllistApp" ng-controller="esllistCtrl">
 						  <thead>
 							  <tr>
-
+								  <th class="bs-checkbox" style="width:20px">
+										  <input type="checkbox" style="margin: auto" >
+									<div class="fht-cell" style="width: 15px"></div>
+								  </th>
                                   <th>序号</th>
                                   <th>门店</th>
 								  <th>ID</th> 
@@ -390,6 +401,9 @@
 						  </thead>   
 						 <tbody>
 						<tr  ng-repeat="esllist in esllists"   ng-click="editEsllit(esllist.id)" >
+                           <td class="bs-checkbox">
+							   <input type="checkbox" name="btSelectItem" >
+						   </td>
 							<td>{{$index+1}}</td>
 							<td >{{esllist.shop}}</td>
 							<td>{{esllist.id}}</td>
@@ -443,7 +457,6 @@
 				</div><!--/span-->
 			</div><!--/row-->
 	</div><!--/.fluid-container-->
-	
 			<!-- end: Content -->
 		</div><!--/#content.span10-->
 		</div><!--/fluid-row-->
@@ -476,7 +489,6 @@
 	<!-- start: JavaScript-->
 		<script src="hs_js/angular.min.js"></script>
 		<script src="hs_js/eslList.js"></script>
-		<script src="js/jquery-1.9.1.min.js"></script>
 	    <script src="js/jquery-migrate-1.0.0.min.js"></script>
 		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
 		<script src="js/jquery.ui.touch-punch.js"></script>
@@ -493,35 +505,21 @@
 		<script src="js/jquery.chosen.min.js"></script>
 		<script src="js/jquery.uniform.min.js"></script>
 		<script src="js/jquery.cleditor.min.js"></script>
-	
 		<script src="js/jquery.noty.js"></script>
-	
 		<script src="js/jquery.elfinder.min.js"></script>
-	
 		<script src="js/jquery.raty.min.js"></script>
-	
 		<script src="js/jquery.iphone.toggle.js"></script>
-	
 		<script src="js/jquery.uploadify-3.1.min.js"></script>
-	
 		<script src="js/jquery.gritter.min.js"></script>
-	
 		<script src="js/jquery.imagesloaded.js"></script>
-	
 		<script src="js/jquery.masonry.min.js"></script>
-	
 		<script src="js/jquery.knob.modified.js"></script>
-	
 		<script src="js/jquery.sparkline.min.js"></script>
-	
 		<script src="js/counter.js"></script>
-	
 		<script src="js/retina.js"></script>
-
 		<script src="js/custom.js"></script>
-
-<script>
-</script>
+<!--<script>
+</script>-->
 	<!-- end: JavaScript-->
 	
 </body>

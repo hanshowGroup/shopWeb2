@@ -15,18 +15,32 @@
   },
 {
 "shop": "No.001",
-"id": "01",
+"id": "02",
 "type": "11",
 "size": "11",
 "electricity": 100,
 "bind": 100,
   "goodname":"红富士苹果",
-  "goodId":2,
+  "goodId":22,
 "heartbeat": "123",
 "updemode":"已经更新",
 "updatetime": "2015/11/1 08:00:00",
   "basestation":112
-}]
+},
+    {
+      "shop": "No.001",
+      "id": "02",
+      "type": "11",
+      "size": "11",
+      "electricity": 100,
+      "bind": 100,
+      "goodname":"红富士苹果",
+      "goodId":22,
+      "heartbeat": "123",
+      "updemode":"已经更新",
+      "updatetime": "2015/11/1 08:00:00",
+      "basestation":112
+    }]
 }
 
 
