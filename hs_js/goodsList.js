@@ -27,17 +27,18 @@ var app = angular.module('myApp',
         Mock.mockjax(app);
     });
 
+
 app.controller('appCtrl',['$scope','$http', function($scope,$http){
-    var getData = function(){
-        var temp=Mock.mock({
-            'names|1-10': [{
-            'name|+1': 1,
-            'country': '111'
-            }]
-        });
-        $scope.names1=temp.names;
-    };
-    getData();
+//    var getData = function(){
+//        var temp=Mock.mock({
+//            'names|1-10': [{
+//            'name|+1': 1,
+//            'country': '111'
+//            }]
+//        });
+//        $scope.names1=temp.names;
+//    };
+//    getData();
 
     $scope.get = function() {
         $http.get("goodsList.json")

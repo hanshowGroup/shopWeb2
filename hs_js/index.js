@@ -103,7 +103,7 @@ $(document).ready(function() {
         var href = $(this).attr('href');
         if(hash==href.substr(0,href.length-5)){
             var toLoad = hash+'.html';
-            $('#content').load(toLoad)
+            $('#content').load(toLoad);
         } 
     });
      
@@ -114,7 +114,10 @@ $(document).ready(function() {
     $('#load').remove();
     $('#wrapper').append('<span id="load">LOADING...</span>');
     $('#load').fadeIn('normal');
+	var jsScript="hs_js/"+toLoad.substr(0,toLoad.length-5)+".js";
+	loadJs(jsScript);
     window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    
     function loadContent() {
         $('#content').load(toLoad,'',showNewContent())
     }
