@@ -1,9 +1,11 @@
 <?php
-$params = json_decode(file_get_contents('php://input'),true);
-    echo $params['shopId'];
- //if($params['id']!=null){
- //  $error_respon = array('result' => 'ERROR_MSG_MISS', 'msg' => '信息不能为空');
-// }else{
-//  $respon = array('result' => 'ERROR_MSG_MISS', 'msg' => '增加成功');
-// }
+        echo $params['id'];
+        echo $params['shopId'];
+        echo $params['type'];
+        echo $params['electricity'];
+        echo $params['bind'];
+        echo $params['heartBeat'];
+        echo $params['updateState'];
+        echo $params['updateTime'];
+        echo 'success';
 ?>

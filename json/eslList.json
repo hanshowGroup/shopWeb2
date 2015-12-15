@@ -2,7 +2,7 @@
   "esllists":[{
     "shop": "No.001",
     "id": "01",
-    "type": "11",
+    "Type": "11",
     "size": "11",
     "electricity": 100,
     "bind": 100,
