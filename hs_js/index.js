@@ -98,4 +98,36 @@ $(document).ready(function() {
 		}
 		$("#eslPie").bind("plothover", pieHover);
 	}
+    var hash = window.location.hash.substr(1);
+    var href = $('.main-menu li a').each(function(){
+        var href = $(this).attr('href');
+        if(hash==href.substr(0,href.length-5)){
+            var toLoad = hash+'.html';
+            $('#content').load(toLoad);
+        } 
+    });
+     
+    $('.main-menu li a:not(.dropmenu)').click(function(){
+     
+    var toLoad = $(this).attr('href');
+    $('#content').hide('fast',loadContent);
+    $('#load').remove();
+    $('#wrapper').append('<span id="load">LOADING...</span>');
+    $('#load').fadeIn('normal');
+	var jsScript="hs_js/"+toLoad.substr(0,toLoad.length-5)+".js";
+	loadJs(jsScript);
+    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    
+    function loadContent() {
+        $('#content').load(toLoad,'',showNewContent())
+    }
+    function showNewContent() {
+        $('#content').show('normal',hideLoader());
+    }
+    function hideLoader() {
+        $('#load').fadeOut('normal');
+    }
+    return false;
+     
+    });
 });
